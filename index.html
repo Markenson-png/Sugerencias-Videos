@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias de Videos</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Agrega Bootstrap si aún no está incluido -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 ">
+        <img src="./assets/img/107735.png" alt="">
+        <span class="text-center"> <strong> Sugerencias de Videos </strong></span>
+        <!-- Menú colapsable -->
+        <div class="accordion" id="videoCategories">
+            <div class="card">
+                <div class="card-header" id="headingMusica">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseMusica" aria-expanded="true" aria-controls="collapseMusica">
+                            Música
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseMusica" class="collapse show" aria-labelledby="headingMusica" data-parent="#videoCategories">
+                    <div class="card-body">
+                        <iframe id="musica" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingPelicula">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePelicula" aria-expanded="false" aria-controls="collapsePelicula">
+                            Película
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsePelicula" class="collapse" aria-labelledby="headingPelicula" data-parent="#videoCategories">
+                    <div class="card-body">
+                        <iframe id="pelicula" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingSerie">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSerie" aria-expanded="false" aria-controls="collapseSerie">
+                            Serie
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSerie" class="collapse" aria-labelledby="headingSerie" data-parent="#videoCategories">
+                    <div class="card-body">
+                        <iframe id="serie" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
